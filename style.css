@@ -27,3 +27,6 @@ body {
     .card-img-top:hover {
       opacity: 0.5;    
     }
+    .navbar-brand {
+      font-size: 50px;
+    }
