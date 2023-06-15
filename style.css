@@ -9,7 +9,7 @@ body {
       height: 100%;
     }
     .col-md-6 { color:#fff }
-.container-fluid {background-color: blueviolet;
+.container-fluid {background-color: rgb(255, 250, 208);
 }
     .swiper-slide {
       text-align: center;
