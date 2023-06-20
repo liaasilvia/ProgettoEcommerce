@@ -79,8 +79,8 @@ body {
     }
     .row {text-align: center;
       align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .contact-info {
     margin-bottom: 20px;
@@ -101,4 +101,8 @@ body {
     margin-top: 0px ;
     
   }
+  .raw {text-align: center;
+    align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
   
