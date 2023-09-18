@@ -35,7 +35,12 @@ body {
       height: 100%;
       object-fit: cover;
     }
-    
+  
+    .swiper-wrapper img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+    }
 
     .card-body{
       background-color: rgba(165, 42, 42, 0.466);;
@@ -165,7 +170,8 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;}
 
-   #cookiewindow {
+  
+  #cookiewindow {
     position: fixed;
     bottom: 150px;
     left: 100px;
@@ -173,25 +179,23 @@ body {
     height: 50px;
     cursor:pointer;
     z-index: 9999;
-    background-color: rgba(165, 42, 42, 0.466);
   }
- 
-   #innercookie {
+  
+  #innercookie {
     position: absolute;
     color:black;
     font-size: 10px;
-    background-color:rgba(165, 42, 42, 0.466);
+     background-color: rgba(165, 42, 42, 0.466);
     padding: 15px;
     border-radius:20px;
     z-index: 9999;
   }
- 
   #perchiudere {
     font-size: 15px;
     margin-left: 190px;
   }
   #bottoncino {
-    background-color:rgba(165, 42, 42, 0.466);
+     background-color: rgba(165, 42, 42, 0.466);
     height:70px;
     width: 70px;
     bottom: 10px;
