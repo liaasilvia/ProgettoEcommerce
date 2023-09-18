@@ -165,7 +165,16 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;}
 
-  
+   #cookiewindow {
+    position: fixed;
+    bottom: 150px;
+    left: 100px;
+    width: 230px;
+    height: 50px;
+    cursor:pointer;
+    z-index: 9999;
+    background-color: rgba(165, 42, 42, 0.466);
+  }
  
    #innercookie {
     position: absolute;
