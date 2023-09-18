@@ -177,15 +177,7 @@ body {
     background-color: rgba(165, 42, 42, 0.466);
   }
   
-  #innercookie {
-    position: absolute;
-    color:black;
-    font-size: 10px;
-    background-color: rgba(165, 42, 42, 0.466);
-    padding: 15px;
-    border-radius:20px;
-    z-index: 9999;
-  }
+ 
   #perchiudere {
     font-size: 15px;
     margin-left: 190px;
