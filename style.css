@@ -174,13 +174,14 @@ body {
     height: 50px;
     cursor:pointer;
     z-index: 9999;
+    background-color: rgba(165, 42, 42, 0.466);
   }
   
   #innercookie {
     position: absolute;
-    color:white;
+    color:black;
     font-size: 10px;
-    background-color:hsl(0, 100%, 30%);
+    background-color: rgba(165, 42, 42, 0.466);
     padding: 15px;
     border-radius:20px;
     z-index: 9999;
