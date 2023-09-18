@@ -178,7 +178,7 @@ body {
   
   #innercookie {
     position: absolute;
-    color:black;
+    color:white;
     font-size: 10px;
     background-color:hsl(0, 100%, 30%);
     padding: 15px;
@@ -190,7 +190,7 @@ body {
     margin-left: 190px;
   }
   #bottoncino {
-    background-color: hsl(0, 100%, 30%);
+    background-color: rgba(165, 42, 42, 0.466);
     height:70px;
     width: 70px;
     bottom: 10px;
