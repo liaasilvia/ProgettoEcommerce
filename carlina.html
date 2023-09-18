@@ -82,7 +82,7 @@
               </table>
             </div>
           </div>
-          <span class="btn btn-primary"style="background-color: brown; border-color: brown;" >Add to cart</span>
+          <span class="btn btn-primary"style="background-color: brown; border-color: brown;" onclick="addToCart()">Add to cart</span>
         </form>
       </div>
     </div>
@@ -116,6 +116,9 @@
     function cambiaTaglia() {
       var taglia = document.getElementById("taglia");
       taglia.value = event.target.innerHTML;
+    }
+    function addToCart() {
+      alert("Prodotto aggiunto al carrello");
     }
   </script>
   <!-- Collegamento ai file JavaScript di Bootstrap -->
