@@ -46,7 +46,7 @@
     </nav>
   </header>
 
-  <main class="container my-5">
+  <main class="main-container container my-5">
     <div class="row">
       <div class="col-md-6">
         <img src="immagini/emily.webp" alt="Immagine di esempio" class="img-fluid">
@@ -82,7 +82,7 @@
               </table>
             </div>
           </div>
-          <span class="btn btn-primary"style="background-color: brown; border-color: brown;" >Add to cart</span>
+          <span class="btn btn-primary"style="background-color: brown; border-color: brown;" onclick="addToCart()">Add to cart</span>
         </form>
       </div>
     </div>
@@ -116,6 +116,10 @@
     function cambiaTaglia() {
       var taglia = document.getElementById("taglia");
       taglia.value = event.target.innerHTML;
+    }
+
+    function addToCart() {
+      alert("Prodotto aggiunto al carrello");
     }
   </script>
   <!-- Collegamento ai file JavaScript di Bootstrap -->
