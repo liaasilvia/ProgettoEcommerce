@@ -40,42 +40,42 @@
       </div>
     </nav>
   </header>
-
+<!---->
     <main class="container my-5">
-        
+   
             <div class="row mb-3">
                 <label for="inputCategory" onchange="filterProducts()" class="col-sm-2 col-form-label">Category:</label>
                 <div class="col-sm-10">
-                    <select class="form-select" id="inputCategory">
+                    <select class="form-select" id="inputCategory" onchange="filterProducts()">
                         <option value="tutte">All the category</option>
-                        <option value="top" onchange="filterProducts()" >Top</option>
-                        <option value="abbigliamento">Dresses</option>
-                        <option value="casa">Bottoms</option>
+                        <option value="Top" onclick="filterProducts()" >Top</option>
+                        <option value="Dresses"onclick="filterProducts()">Dresses</option>
+                        <option value="Bottoms"onclick="filterProducts()">Bottoms</option>
                     </select>
                 </div>
           
             </div>
         </form>
         <hr>
-        <div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="row row-cols-1 row-cols-md-1 g-2" id="productContainer">
             <div class="col">
-                <div class="card h-80" data-category="top">
+                <div class="card h-80 product" data-category="Top">
                   <a href="emily.html">
-                    <img src="immagini/emily.webp" class="card-img-top" alt="...">
+                    <img src="immagini/emily.webp" class="card-img-top" alt="Top">
                   </a>
                     <div class="card-body">
                         <h5 class="card-title">Emily Corset</h5>
                         <p class="card-text">	
-Description </p>
+                          Description </p>
                         <p class="card-text"><strong>Prize:</strong> €99,99</p>
                         <a href="#" class="btn btn-primary" style="background-color: brown; border-color: brown; " >Add to Cart</a>
                     </div>                    
                 </div>
             </div>
             <div class="col">
-                <div class="card h-80">
+                <div class="card h-80 product" data-category="Bottoms">
                   <a href="jody.html">
-                    <img src="immagini/jody.webp" class="card-img-top" alt="...">
+                    <img src="immagini/jody.webp" class="card-img-top" alt="Dresses">
                   </a>
                     <div class="card-body">
                         <h5 class="card-title">Jody Skirt</h5>
@@ -87,7 +87,7 @@ Description </p>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-80"> 
+                <div class="card h-80 product" data-category="Dresses"> 
                   <a href="artemisia.html">
                     <img src="immagini/artemisia.webp" class="card-img-top" alt="...">
                   </a>
@@ -110,7 +110,7 @@ Description </p>
   <hr>
   <div class="row row-cols-1 row-cols-md-1 g-4">
       <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 product" data-category="Dresses">
             <a href="carlina.html">
               <img src="immagini/carlina.webp" class="card-img-top" alt="...">
             </a>
@@ -125,7 +125,7 @@ Description </p>
           </div>
       </div>
       <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 product" data-category="Top">
             <a href="amanda.html">
               <img src="immagini/amanda.webp" class="card-img-top" alt="...">
             </a>
@@ -139,7 +139,7 @@ Description </p>
           </div>
       </div>
       <div class="col">
-          <div class="card h-100"> 
+          <div class="card h-100 product" data-category="Bottoms"> 
             <a href="katy.html">
               <img src="immagini/katy.webp" class="card-img-top" alt="...">
             </a>
