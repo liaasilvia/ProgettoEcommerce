@@ -1,21 +1,20 @@
+
 var swiper = new Swiper(".mySwiper", {autoplay: {
+  
   delay: 2500,
   disableOnInteraction: false,
 }});
+
 function filterProducts() {
   // Seleziona tutti gli elementi della griglia di prodotti
   var products = document.querySelectorAll('.product');
 
-  // Ottieni le categorie selezionate
-  var selectedCategories = [];
-  var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
-  for (var i = 0; i < checkboxes.length; i++) {
-      selectedCategories.push(checkboxes[i].value);
-  }
+  // Ottieni la categoria selezionata
+  var selectedCategory = document.querySelector('#inputCategory').value;
 
-  // Mostra solo i prodotti delle categorie selezionate
+  // Mostra solo i prodotti della categoria selezionata
   for (var i = 0; i < products.length; i++) {
-      if (selectedCategories.indexOf(products[i].dataset.category) !== -1 || selectedCategories.length === 0) {
+      if (products[i].dataset.category === selectedCategory || selectedCategory==='tutte') {
           products[i].style.display = 'block';
       } else {
           products[i].style.display = 'none';
@@ -25,3 +24,14 @@ function filterProducts() {
 
 // Mostra tutti i prodotti all'avvio della pagina
 filterProducts();
+
+
+//cookie
+function hideCookie() {
+  let cookie = document.querySelector("#innercookie");
+  cookie.style = "display:none;";
+}
+function showCookie() {
+  let cookie = document.querySelector("#innercookie");
+  cookie.style = "display:block;";
+}
