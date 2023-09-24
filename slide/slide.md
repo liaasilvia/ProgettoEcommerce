@@ -134,10 +134,16 @@ function showCookie() {
 In questa pagina vi è una breve **descrizione** del brand, dei suoi valori e delle caratteristiche principali e nella parte inferiore sono presenti tre immagini.
 
 ---
-![bg right:45% width:600px](filtromockup.png)
+![bg right:50% width:500px](clothing.png)
 # Clothing
-La pagina dei prodotti come nella home è resa **dinamica attraverso un array di prodotti** che permette di **generare codice HTML per ogni prodotto**, inserito all'interno di un elemento specifico (determinato da un ID) nel documento HTML.
-Inoltre è presente un **filtro dei prodotti** in base alla categoria (Dress, Top, Buttom)
+All'interno di questa pagina sono presenti alcuni articoli dell'e-commerce con i relativi prezzi.
+Inoltre è presente una barra di riccerca che **filtra i prodotti** in base alla categoria (Dress, Top, Buttom)
+
+---
+![bg right:50% width:550px](dreess.png)
+# Filtro prodotti
+All'interno di questa pagina sono presenti alcuni articoli dell'e-commerce con i relativi prezzi.
+Inoltre è presente una barra di riccerca che **filtra i prodotti** in base alla categoria (Dress, Top, Buttom)
 
 ---
 # Filtro prodotti
@@ -159,73 +165,50 @@ function filterProducts() {
 // Mostra tutti i prodotti all'avvio della pagina
 filterProducts();
 ```
-Questa parte contiene la funzione filterProducts, che viene chiamata per filtrare i prodotti in base alla categoria e all'intervallo di prezzo. Viene creato un **ciclo forEach** per iterare attraverso ogni prodotto nell'array products.
+Questa parte contiene la funzione filterProducts, che viene chiamata per filtrare i prodotti in base alla categoria.
 
 ---
-![bg right:45% width:650px](singolo.png)
-## Prodotto Singolo
-La **generazione** di questa pagina è resa **dinamica** utilizzando l'array con i prodotti
+![bg right:50% width:500px](gonna.png)
+# Prodotto Singolo
+Questa è la pagina del singolo prodotto, caratterizzata da una breve descrizione del prodotto e da due selezioni, la quantità e le taglie.
+Vi è quindi la possibilità di scegliere quanti prodotti e di quale taglia mettere nel carrello.
 
 ---
-![bg right:30% width:650px](carrellomockup1.png)
-## Cart
+# Funzioni per il prodotto
+```js
+function visualizzaTaglie() {
+      var taglie = document.getElementById("taglie");
+      var taglieup = document.getElementById("taglieup");
+      var tagliedown = document.getElementById("tagliedown");
+      if (taglie.style.display === "none") {
+        taglie.style.display = "block";
+        taglieup.style.display = "block";
+        tagliedown.style.display = "none";
+      } else {
+        taglie.style.display = "none";
+        taglieup.style.display = "none";
+        tagliedown.style.display = "block";
+      }
+    }
+    function cambiaTaglia() {
+      var taglia = document.getElementById("taglia");
+      taglia.value = event.target.innerHTML;
+    }
+
+    function addToCart() {
+      alert("Prodotto aggiunto al carrello");
+    }
+```
+
+---
+![bg right:60% width:650px](cart.png)
+# Cart
 La pagina del carrello non è completamente funzionante, al momento è possibile aggiungere i prodotti al suo interno, ma non è visibile direttamente nel carrello.
 
 ---
-### Calcolo importo
-La funzione `calculateTotal()` viene utilizzata per calcolare il totale dell'importo in base al prezzo e alla quantità di un prodotto selezionato.
-```js
-function calculateTotal() {
-    var priceElement = document.querySelector(".card-text.price");
-    var quantityElement = document.querySelector("form-control.quantity");
-    var subtotalElement = document.getElementById("subtotal");
-    var shippingCostElement = document.getElementById("shippingCost");
-    var totalAmountElement = document.getElementById("totalAmount");
-    if (priceElement && quantityElement && subtotalElement && shippingCostElement && totalAmountElement)
-    ...
-```
-Inizialmente controlla se tutti gli elementi necessari sono presenti sulla pagina.
-
----
-![bg right:30% width:650px](carrellomockup2.png)
-Se tutti gli elementi sono presenti:
-- Ottiene il **prezzo del prodotto** dalla stringa **priceElement** assegnandolo alla variabile **price**
-- Ottiene la **quantità** del prodotto dal **campo di input in quantityElement**.
-- Calcola il **totale moltiplicando il prezzo per la quantità** e assegna il risultato alla **variabile total**.
-```js
- var total = price * quantity;
- ```
----
-![bg right:30% width:650px](carrellomockup4.png)
-A questo punto:
-- Aggiorna il contenuto dei vari elementi HTML con i prezzi finali.
-- Si imposta il costo di spedizione
-- Calcola l'**importo totale** sommando il **totale del prodotto al costo di spedizione** e assegna il risultato alla **variabile totalAmount**.
-
----
-![bg right:30% width:650px](carrellomockup3.png)
-#### Rimozione del prodotto
-```js
-function removeProduct(event) {
-    var card = event.target.closest(".card");
-    card.remove();
-
-    var subtotalElement = document.getElementById("subtotal");
-    var shippingCostElement = document.getElementById("shippingCost");
-    var totalAmountElement = document.getElementById("totalAmount");
-
-    if (subtotalElement && shippingCostElement && totalAmountElement) {
-        subtotalElement.innerHTML = "€0,00";
-        shippingCostElement.innerHTML = "€0,00";
-        totalAmountElement.innerHTML = "€0,00";
-    }
-}
-```
-La funzione `removeProduct(event)` viene utilizzata per rimuovere il prodotto dal carrello reimpostando a zero i valori dei vari elementi html.
-
----
-## Responsive mockup
-![width:900px](mockup.png)
+![bg right:50% width:450px](contact.png)
+# Contatti
+In questa sezione, sono presnti i **dati di contatto** principali dell'e-commerce e un **modulo** che consente alle persone di mettersi in contatto direttamente con noi attraverso questa pagina..+
 
 ---
 ## Analisi [GTmetrix](https://gtmetrix.com/)
@@ -236,10 +219,7 @@ La funzione `removeProduct(event)` viene utilizzata per rimuovere il prodotto da
 ## Analisi [SEOptimer](https://www.seoptimer.com/)
 ![width:950px](seo.png)
 
----
-![bg right:40% width:350px](contatti2.png)
-## Contatti
-In questa pagina ho inserito gli **estremi di contatto** e ho incluso un **form** per permettere alle persone di **contattarci direttamente dalla pagina**.
+
 
 ---
 
