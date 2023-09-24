@@ -17,7 +17,7 @@ A.A. 2023-2024
 ---
 ![ width:570px](logoesteso2.png)
 
-Quest'anno abbiamo creato un **sito multi pagina per un e-commerce**. Io ho scelto di progettare un e-commerce di vestiti eleganti di alta qualità, utilizzando le **competenze** acquisite in precedenza su **HTML, CSS e Javascript**.
+Quest'anno abbiamo creato un **sito multi pagina per un e-commerce**. Io ho optato per la realizzazione di un negozio virtuale specializzato in abbigliamento di lusso, sfruttando le mie competenze pregresse in **HTML, CSS e Javascript**.
 
 Il repository è pubblicato a questo indirizzo: https://liashouse.netlify.app/
 
@@ -33,19 +33,18 @@ Per la creazione del sito e delle relative slide ho utilizzato:
 ---
 # Marp: Creazione Slide
 ![bg right:44% width:400px](marp.png)
-Marp conosciuto anche come _Markdown Presentation Ecosystem_ permette un'esperienza intuitiva e veloce per creare delle semplici slide. Quello che noi dobbiamo fare è semplicemente scrivere un documento in **markdown**.
+Marp conosciuto anche come _Markdown Presentation Ecosystem_ offre un approccio rapido e intuitivo per la creazione di slide basilari. Quello che noi dobbiamo fare è semplicemente scrivere un documento in **markdown**.
 
 
 
 ---
 # Visual Studio Code: Programmazione
 ![bg right:33% width:300px](vs.png)
-Ho usato il _code editor_ **Visual Studio Code**, clonando il mio repository di GitHub localmente, potendo **programmare** tranquillamente **offline** e successivamente aggiornare il mio repository di GitHub
+Ho usato il _code editor_ **Visual Studio Code**, clonando il mio repository di GitHub localmente, potendo **programmare** tranquillamente **offline** per poi sincronizzare le modifiche con il mio repository GitHub.
 
 ---
 ![bg right:33% width:300px](Bootstrap.png)
-# Librerie
-## Bootstrap
+# Bootstrap
 **Bootstrap** è una libreria di **strumenti liberi per la creazione di siti e applicazioni per il Web**. Essa contiene modelli di progettazione basati su HTML e CSS, sia per la tipografia, che per le varie componenti dell'interfaccia, come moduli, pulsanti e navigazione, così come alcune estensioni opzionali di JavaScript.
 
 
@@ -65,74 +64,51 @@ Per la pubblicazione del sito creato abbiamo utilizzato **Netlify**, società di
 ---
 # Struttura
 Il sito è composto da 5 pagine principali: 
-- Home
-- Brand
-- Clothing
-- Cart
-- Contact
+- **Home**
+- **Brand**
+- **Clothing**
+- **Cart**
+- **Contact**
 
 Ogni pagina presenta degli elementi di base come la **navbar** e il **footer**
 
 ---
 # Navbar
-![bg right:33% width:250px](mockuphome.png)
-In alto abbiamo la **navbar** importante per la navigazione all'interno del sito.
-Caratteristica rilevante sono gli slider, realizzati usando delle demo di [Swiper](https://swiperjs.com/demos)
+![width:5000px](navbar.png)
+In alto abbiamo la **navbar** importante per la navigazione all'interno del nostro e-commerce.
+Composta da vari elementi che permettono di avere un collegamento con le altre pagine del sito.
+
 
 ---
 # Footer
-![bg right:33% width:250px](mockuphome.png)
-In alto abbiamo la **navbar** importante per la navigazione all'interno del sito.
-Caratteristica rilevante sono gli slider, realizzati usando delle demo di [Swiper](https://swiperjs.com/demos)
+![width:5000px](footer.png)
+In basso abbiamo il **footer** un elemento importante perchè vi sono le informazioni principali dell'azienda, come indirizzo email, numero di telefono.
+Nel footer della Home e dei contacts è presente anche la posizione sulla mappa di Google Maps.
 
 
 ---
 # Homepage
-![bg right:33% width:250px](mockuphome.png)
-In alto abbiamo la **navbar** importante per la navigazione all'interno del sito.
-Caratteristica rilevante sono gli slider, realizzati usando delle demo di [Swiper](https://swiperjs.com/demos)
+![bg right:50% width:500px](home.png)
+In alto abbiamo la **navbar** aseguire vi è lo **slider**, che scorre 3 fotografie diverse, successivamente vi sono altre informazioni e foto, infine vi è il **footer**. Una caratteristica importante è la presenza della finestra dei cookie.
 
 ---
-### Home Slider:
-![](slider2.jpg)
-Il carosello iniziale prevede un **autoplay** con un intervallo di tempo specifico
-e la possibilità di fare swipe e vedere le altre diapositive, tre in totale.
+# Slider
+![bg right:50% width:500px](slider.png)
+Nella home è presente questo slider, realizzato usando delle demo di [Swiper](https://swiperjs.com/demos) Il carosello iniziale prevede un **autoplay** genrato grazie a javascript, con un intervallo di tempo specifico e la possibilità di fare swipe e vedere le altre diapositive, tre in totale.
 
 ---
-#### Array:
+# Codice js dello slider
 ```js
-let products = [
-  {
-    id: 1,
-    nome: "Chainsaw Man 12",
-    prezzo: 5.0,
-    immagine: "immagini/shounen/cm12.jpg",
-    categoria: "shounen",
-    descrizione: "...",
-  },
-  ...
+var swiper = new Swiper(".mySwiper", {autoplay: {
+  
+  delay: 2500,
+  disableOnInteraction: false,
+}});  
 ]
 ```
-Per far funzionare il tutto ho dovuto creare questa **variabile contenente i vari prodotti** che poi appaiono nella pagina
 
 ---
-#### Funzione JS che definisce la struttura HTML:
-```js
-html = "";
-products.forEach((product) => {
-    html += `
-<div class="swiper-slide img">
-
-...
-
-</div>`;
-});
-document.getElementById("dinamicihome").innerHTML = html;
-```
-Secondo il codice JS il codice html verrà generato nell'elemento **"dinamicihome"**, un semplice <div> presente nella pagina index.html
-
----
-### Cookie
+# Cookie
 Ogni sito al giorno d'oggi ha l’obbligo di informare gli utenti sulla raccolta e l’elaborazione dei dati. Anche se un sito web non trae profitto direttamente o sostanzialmente dall’elaborazione dei dati, se vengono raccolti dati personali utilizzando i cookie, **è necessario in ogni modo una cookie policy**.
 
 ![](cookie.png)
