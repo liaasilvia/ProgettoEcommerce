@@ -137,16 +137,27 @@ In questa pagina vi è una breve **descrizione** del brand, dei suoi valori e de
 ![bg right:45% width:600px](filtromockup.png)
 # Clothing
 La pagina dei prodotti come nella home è resa **dinamica attraverso un array di prodotti** che permette di **generare codice HTML per ogni prodotto**, inserito all'interno di un elemento specifico (determinato da un ID) nel documento HTML.
-Inoltre è presente un **filtro dei prodotti** in base alla categoria
+Inoltre è presente un **filtro dei prodotti** in base alla categoria (Dress, Top, Buttom)
 
 ---
-#### Filtro prodotti
+# Filtro prodotti
 ```js
 function filterProducts() {
-...
-// prodotti dinamici
-  let html = "";
-  products.forEach((product) =>
+  // Seleziona tutti gli elementi della griglia di prodotti
+  var products = document.querySelectorAll('.product');
+
+  // Ottieni la categoria selezionata
+  var selectedCategory = document.querySelector('#inputCategory').value;
+
+  // Mostra solo i prodotti della categoria selezionata
+  for (var i = 0; i < products.length; i++) {
+      if (products[i].dataset.category === selectedCategory || selectedCategory==='tutte') {
+          products[i].style.display = 'block';
+      } else {
+          products[i].style.display = 'none';
+      }
+// Mostra tutti i prodotti all'avvio della pagina
+filterProducts();
 ```
 Questa parte contiene la funzione filterProducts, che viene chiamata per filtrare i prodotti in base alla categoria e all'intervallo di prezzo. Viene creato un **ciclo forEach** per iterare attraverso ogni prodotto nell'array products.
 
