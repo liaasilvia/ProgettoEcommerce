@@ -22,17 +22,28 @@ Quest'anno abbiamo creato un **sito multi pagina per un e-commerce**. Io ho scel
 Il repository è pubblicato a questo indirizzo: https://liashouse.netlify.app/
 
 ---
-# Creazione Slide
-![bg right:44% width:400px](marp(1).png)
-Marp conosciuto anche come _Markdown Presentation Ecosystem_ permette un'esperienza intuitiva e veloce per creare delle semplici slide. Quello che noi dobbiamo fare è semplicemente scrivere un documento in **markdown**.
+# Strumenti utilizzati
+Per la creazione del sito e delle relative slide ho utilizzato: 
+- Marp, Markdown Presentation Ecosystem
+- GitHub, Codespace (Visual Studio Code)
+- Bootstrap
+- Chat GPT
+- Netlify
 
 ---
-# Strumento per la programmazione
+# Marp: Creazione Slide
+![bg right:44% width:400px](marp.png)
+Marp conosciuto anche come _Markdown Presentation Ecosystem_ permette un'esperienza intuitiva e veloce per creare delle semplici slide. Quello che noi dobbiamo fare è semplicemente scrivere un documento in **markdown**.
+
+
+
+---
+# Visual Studio Code: Programmazione
 ![bg right:33% width:300px](vs.png)
 Ho usato il _code editor_ **Visual Studio Code**, clonando il mio repository di GitHub localmente, potendo **programmare** tranquillamente **offline** e successivamente aggiornare il mio repository di GitHub
 
 ---
-![bg right:33% width:300px](bootstrap.png)
+![bg right:33% width:300px](Bootstrap.png)
 # Librerie
 ## Bootstrap
 **Bootstrap** è una libreria di **strumenti liberi per la creazione di siti e applicazioni per il Web**. Essa contiene modelli di progettazione basati su HTML e CSS, sia per la tipografia, che per le varie componenti dell'interfaccia, come moduli, pulsanti e navigazione, così come alcune estensioni opzionali di JavaScript.
@@ -40,16 +51,19 @@ Ho usato il _code editor_ **Visual Studio Code**, clonando il mio repository di 
 
 
 ---
-# IA e Chat GPT
-![bg right:33% width:250px](chatgpt.png)
+# Chat GPT
+![bg right:44% width:250px](ChatGPT.png)
 Ho usato questa IA, _intelligenza artificiale_ per **creare parte dei testi** all'interno del sito.
 
+---
+# Netlify: Pubblicazione
+![bg right:45% width:400px](Netlify.png)
+Per la pubblicazione del sito creato abbiamo utilizzato **Netlify**, società di cloud computing basata su servizi di hosting e back-end serverless per applicazioni Web e siti Web statici.
 
 ---
-![bg right:40% width:400px](coding1.png)
 # Creazione del sito
 ---
-## Struttura
+# Struttura
 Il sito è composto da 5 pagine principali: 
 - Home
 - Brand
@@ -60,7 +74,20 @@ Il sito è composto da 5 pagine principali:
 Ogni pagina presenta degli elementi di base come la **navbar** e il **footer**
 
 ---
-## Homepage
+# Navbar
+![bg right:33% width:250px](mockuphome.png)
+In alto abbiamo la **navbar** importante per la navigazione all'interno del sito.
+Caratteristica rilevante sono gli slider, realizzati usando delle demo di [Swiper](https://swiperjs.com/demos)
+
+---
+# Footer
+![bg right:33% width:250px](mockuphome.png)
+In alto abbiamo la **navbar** importante per la navigazione all'interno del sito.
+Caratteristica rilevante sono gli slider, realizzati usando delle demo di [Swiper](https://swiperjs.com/demos)
+
+
+---
+# Homepage
 ![bg right:33% width:250px](mockuphome.png)
 In alto abbiamo la **navbar** importante per la navigazione all'interno del sito.
 Caratteristica rilevante sono gli slider, realizzati usando delle demo di [Swiper](https://swiperjs.com/demos)
