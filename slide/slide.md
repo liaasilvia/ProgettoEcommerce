@@ -109,48 +109,33 @@ var swiper = new Swiper(".mySwiper", {autoplay: {
 
 ---
 # Cookie
-Ogni sito al giorno d'oggi ha l’obbligo di informare gli utenti sulla raccolta e l’elaborazione dei dati. Anche se un sito web non trae profitto direttamente o sostanzialmente dall’elaborazione dei dati, se vengono raccolti dati personali utilizzando i cookie, **è necessario in ogni modo una cookie policy**.
+![bg right:50% width:500px](cookie.png)
+I cookie sono piccoli file di testo memorizzati sul tuo dispositivo quando visiti un sito web. Essi svolgono diverse funzioni, tra cui il **tracciamento** delle tue attività, il **miglioramento** dell'esperienza utente, e la **memorizzazione** delle tue preferenze durante la navigazione su Internet.
 
-![](cookie.png)
-
----
-#### Codice HTML
-```html
-<div id="cookie-banner" class="cookie-banner">
-    <p> ... <a href="cookie.html">Maggiori informazioni</a></p>
-    <button id="cookie-accept">Accetta</button>
-</div>
-```
-Per accedere alla cookie policy completa basta cliccare su **Maggiori informazioni** e si verrà portati nella pagina **cookie.html**
 
 ---
-#### Funzione JS:
+# Codice js dei cookie
 ```js
-    cookieAccept.addEventListener("click", function () {
-        cookieBanner.style.display = "none";
-        localStorage.setItem("cookieConsent", "true");
-    });
+//cookie
+function hideCookie() {
+  let cookie = document.querySelector("#innercookie");
+  cookie.style = "display:none;";
+}
+function showCookie() {
+  let cookie = document.querySelector("#innercookie");
+  cookie.style = "display:block;";
+}
+
 ```
-Si aggiunge un gestore di eventi al clic sull'elemento cookieAccept, così quando l'utente fa clicca, viene eseguita una **funzione di callback**. All'interno di questa funzione, viene **impostato lo stile** dell'elemento cookieBanner su **"none"**, che lo **nasconde**.
-Viene poi utilizzato l'oggetto **localStorage** per impostare un valore booleano "true" con la chiave "cookieConsent". Questo indica che l'utente ha accettato i cookie.
 
 ---
-```js
-    if (!localStorage.getItem("cookieConsent")) {
-        cookieBanner.style.display = "block";
-    }
-});
-```
-Successivamente, si verifica se l'utente ha già accettato i cookie, se nel localStorage è **presente** un **valore associato alla chiave "cookieConsent"**. Se non è presente, viene impostato lo stile dell'elemento cookieBanner su "block", che lo rende visibile.
-
----
-![bg right:45% height:200px](logo2.png)
-## Brand
-In questa pagina vi è semplicemente una breve descrizione dell'e-commerce e delle figure che compongono il team.
+![bg right:50% height:400px](brand.png)
+# Brand
+In questa pagina vi è una breve **descrizione** del brand, dei suoi valori e delle caratteristiche principali e nella parte inferiore sono presenti tre immagini.
 
 ---
 ![bg right:45% width:600px](filtromockup.png)
-## Clothing
+# Clothing
 La pagina dei prodotti come nella home è resa **dinamica attraverso un array di prodotti** che permette di **generare codice HTML per ogni prodotto**, inserito all'interno di un elemento specifico (determinato da un ID) nel documento HTML.
 Inoltre è presente un **filtro dei prodotti** in base alla categoria
 
