@@ -40,7 +40,7 @@ Marp conosciuto anche come _Markdown Presentation Ecosystem_ offre un approccio 
 ---
 # Visual Studio Code: Programmazione
 ![bg right:33% width:300px](vs.png)
-Ho usato il _code editor_ **Visual Studio Code**, per scrivere il codice del mio sito web. Ho clonato il mio repository di GitHub, per poter **programmare offline** per poi sincronizzare le modifiche con il mio repository GitHub.
+Ho usato il _code editor_ **Visual Studio Code**, per scrivere il codice del mio sito web. Ho clonato il mio repository di GitHub su VS, per poter **programmare offline** così che qualsiasi modifica successivamente si sincronizzasse direttamente con il mio repository di GitHub.
 
 ---
 ![bg right:33% width:300px](Bootstrap.png)
@@ -94,7 +94,7 @@ In alto abbiamo la **navbar** aseguire vi è lo **slider**, che scorre 3 fotogra
 ---
 # Slider
 ![bg right:50% width:500px](slider.png)
-Nella home è presente questo slider, realizzato usando delle demo di [Swiper](https://swiperjs.com/demos) Il carosello iniziale prevede un **autoplay** genrato grazie a javascript, con un intervallo di tempo specifico e la possibilità di fare swipe e vedere le altre diapositive, tre in totale.
+Nella home è presente questo slider, realizzato usando delle demo di [Swiper](https://swiperjs.com/demos) Il carosello iniziale prevede un **autoplay** generato grazie a javascript, con un intervallo di tempo specifico e la possibilità di fare swipe e vedere le altre diapositive, tre in totale.
 
 ---
 # Codice js dello slider
@@ -137,13 +137,12 @@ In questa pagina vi è una breve **descrizione** del brand, dei suoi valori e de
 ![bg right:50% width:500px](clothing.png)
 # Clothing
 All'interno di questa pagina sono presenti alcuni articoli dell'e-commerce con i relativi prezzi.
-Inoltre è presente una barra di riccerca che **filtra i prodotti** in base alla categoria (Dress, Top, Buttom)
+Inoltre è presente una barra di ricerca che **filtra i prodotti**.
 
 ---
 ![bg right:50% width:550px](dreess.png)
 # Filtro prodotti
-All'interno di questa pagina sono presenti alcuni articoli dell'e-commerce con i relativi prezzi.
-Inoltre è presente una barra di riccerca che **filtra i prodotti** in base alla categoria (Dress, Top, Buttom)
+La barra di ricerca è ideata espressamente per rendere più semplice la ricerca di un deteminato prodotto. In questo caso propone tre diverse categorie di vestiti **Dress, Top, Buttom**.
 
 ---
 # Filtro prodotti
@@ -208,7 +207,7 @@ La pagina del carrello non è completamente funzionante, al momento è possibile
 ---
 ![bg right:50% width:450px](contact.png)
 # Contatti
-In questa sezione, sono presnti i **dati di contatto** principali dell'e-commerce e un **modulo** che consente alle persone di mettersi in contatto direttamente con noi attraverso questa pagina..+
+In questa sezione, sono presenti i **dati di contatto** principali dell'e-commerce e un **modulo** che consente alle persone di mettersi in contatto direttamente con noi attraverso questa pagina.
 
 ---
 # Analisi [GTmetrix](https://gtmetrix.com/)
