@@ -40,7 +40,7 @@ Marp conosciuto anche come _Markdown Presentation Ecosystem_ offre un approccio 
 ---
 # Visual Studio Code: Programmazione
 ![bg right:33% width:300px](vs.png)
-Ho usato il _code editor_ **Visual Studio Code**, clonando il mio repository di GitHub localmente, potendo **programmare** tranquillamente **offline** per poi sincronizzare le modifiche con il mio repository GitHub.
+Ho usato il _code editor_ **Visual Studio Code**, per scrivere il codice del mio sito web. Ho clonato il mio repository di GitHub, per poter **programmare offline** per poi sincronizzare le modifiche con il mio repository GitHub.
 
 ---
 ![bg right:33% width:300px](Bootstrap.png)
