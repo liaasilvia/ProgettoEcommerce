@@ -18,7 +18,7 @@ jobs:
 
     - name: generate PDF Slide
       run: |
-        npx @marp-team/marp-cli@latest slide.md --pdf --allow-local-files
+        npx @marp-team/marp-cli@latest slide --pdf --allow-local-files
       env:
         PUPPETEER_TIMEOUT: 0           
       
