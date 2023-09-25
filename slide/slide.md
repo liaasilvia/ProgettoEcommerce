@@ -198,6 +198,9 @@ function visualizzaTaglie() {
       alert("Prodotto aggiunto al carrello");
     }
 ```
+---
+Questo codice JavaScript contiene tre funzioni. La prima, **"visualizzaTaglie,"** controlla la visualizzazione di un elemento con id **"taglie"** e cambia l'aspetto di altri due elementi **"taglieup"** e **"tagliedown"** in base alla sua visibilità. La seconda funzione, **"cambiaTaglia,"** imposta il valore di un elemento con id "taglia" al testo interno dell'elemento che ha scatenato l'evento. Infine, la terza funzione, **"addToCart,"** mostra una semplice notifica che indica che il prodotto è stato aggiunto al carrello.
+
 
 ---
 ![bg right:60% width:650px](cart.png)
