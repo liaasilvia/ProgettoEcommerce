@@ -211,15 +211,10 @@ La pagina del carrello non è completamente funzionante, al momento è possibile
 In questa sezione, sono presnti i **dati di contatto** principali dell'e-commerce e un **modulo** che consente alle persone di mettersi in contatto direttamente con noi attraverso questa pagina..+
 
 ---
-## Analisi [GTmetrix](https://gtmetrix.com/)
-![width:750px](gtmetrix1.png)
-![height:150px](gtmetrix2.png)
+# Analisi [GTmetrix](https://gtmetrix.com/)
+GtMetrix è uno dei migliori strumenti per testare la velocità e prestazioni di un sito.
 
----
-## Analisi [SEOptimer](https://www.seoptimer.com/)
-![width:950px](seo.png)
-
-
+![width:1000px](val.png)
 
 ---
 
