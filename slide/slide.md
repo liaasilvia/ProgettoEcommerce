@@ -106,6 +106,7 @@ var swiper = new Swiper(".mySwiper", {autoplay: {
 }});  
 ]
 ```
+Questo codice JavaScript crea un oggetto "swiper" utilizzando la libreria Swiper, associato all'elemento HTML con la classe "mySwiper". Questo oggetto swiper è configurato per eseguire uno slideshow automatico con un ritardo di 2500 millisecondi tra le diapositive e per non interrompersi quando l'utente interagisce con esso.
 
 ---
 # Cookie
@@ -125,8 +126,8 @@ function showCookie() {
   let cookie = document.querySelector("#innercookie");
   cookie.style = "display:block;";
 }
-
 ```
+Questo codice JavaScript definisce due funzioni. La prima, **"hideCookie"**, nasconde un elemento HTML con l'id **"innercookie"** per far sparire la finestra dei cookie. La seconda, "showCookie," fa l'opposto, mostrando l'elemento impostando il suo stile su **"display:block;"**. Queste funzioni possono essere utilizzate per gestire la visualizzazione di un elemento, come un avviso sui cookie, sulla pagina web.
 
 ---
 ![bg right:50% height:400px](brand.png)
@@ -150,10 +151,8 @@ La barra di ricerca è ideata espressamente per rendere più semplice la ricerca
 function filterProducts() {
   // Seleziona tutti gli elementi della griglia di prodotti
   var products = document.querySelectorAll('.product');
-
   // Ottieni la categoria selezionata
   var selectedCategory = document.querySelector('#inputCategory').value;
-
   // Mostra solo i prodotti della categoria selezionata
   for (var i = 0; i < products.length; i++) {
       if (products[i].dataset.category === selectedCategory || selectedCategory==='tutte') {
@@ -164,7 +163,8 @@ function filterProducts() {
 // Mostra tutti i prodotti all'avvio della pagina
 filterProducts();
 ```
-Questa parte contiene la funzione filterProducts, che viene chiamata per filtrare i prodotti in base alla categoria.
+
+Questo codice JS definisce una funzione chiamata **"filterProducts"** che filtra e mostra solo i prodotti in base alla categoria selezionata dall'utente. Gli elementi HTML con la classe **"product"** vengono nascosti o mostrati in base alla categoria selezionata dall'utente. Inoltre, all'avvio della pagina, vengono inizialmente mostrati tutti i prodotti.
 
 ---
 ![bg right:50% width:500px](gonna.png)
