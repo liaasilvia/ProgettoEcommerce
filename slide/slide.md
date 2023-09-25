@@ -1,5 +1,5 @@
 ---
-backgroundImage: url('sfondo.jpg')
+backgroundImage: url('dietro.jpg')
 paginate: true
 marp: true
 
