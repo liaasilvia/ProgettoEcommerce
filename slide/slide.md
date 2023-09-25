@@ -217,8 +217,6 @@ GtMetrix è uno dei migliori strumenti per testare la velocità e prestazioni di
 ![width:1000px](val.png)
 
 ---
-# Responsive
-
 
 ![bg width:950px](mockup.png)
 
