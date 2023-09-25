@@ -15,7 +15,7 @@ A.A. 2023-2024
 **Docente**:Matteo Baccan
 
 ---
-![ width:570px](logoesteso2.png)
+![bg right:40% width:400px](logo-02.png)
 
 Quest'anno abbiamo creato un **sito multi pagina per un e-commerce**. Io ho optato per la realizzazione di un negozio virtuale specializzato in abbigliamento di lusso, sfruttando le mie competenze pregresse in **HTML, CSS e Javascript**.
 
